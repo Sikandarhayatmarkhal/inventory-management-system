@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "inventory-management-system"
+version = "0.1.0"
+description = "A console-based system for managing inventory with admin and user roles."
+authors = ["Sikandar Hayat <your-email@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+# Your main dependencies
+click = "^8.0.0"  # If you're using Click for command-line interactions
+bcrypt = "^3.2.0"  # For password hashing (if needed) not needed in my case
+# Add other dependencies, for example:
+sqlalchemy = "^1.4"  # If you're using SQLAlchemy for database handling
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"  # If you are using pytest for testing
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
